@@ -21,13 +21,39 @@ class _CinemaPageState extends State<CinemaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.deepPurple.shade900,
-      body: PageView.builder(
-        controller: _pageController,
-        itemCount: movieImages.length,
-        itemBuilder: (context, index) {
-          final post = movieImages[index];
-          return _buildCarouselItem(post, index);
-        },
+      body: ListView(
+        children: [
+          SizedBox(
+            height: 500,
+            child: PageView.builder(
+              controller: _pageController,
+              itemCount: movieImages.length,
+              itemBuilder: (context, index) {
+                final post = movieImages[index];
+                return _buildCarouselItem(post, index);
+              },
+            ),
+          ),
+          SizedBox(
+            height: 100,
+            child: ListView.separated(
+              scrollDirection: Axis.horizontal,
+              separatorBuilder: (context, index) => const SizedBox(width: 10),
+              itemCount: movieImages.length,
+              itemBuilder: (context, index) {
+                return ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: Image.asset(
+                    movieImages[index],
+                    width: 300,
+                    height: double.infinity,
+                    fit: BoxFit.cover,
+                  ),
+                );
+              },
+            ),
+          )
+        ],
       ),
     );
   }
