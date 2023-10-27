@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/features/cinema/pages/cinema_page.dart';
+import 'package:test_app/features/instagram/page/instagram_main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,10 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Roboto',
         useMaterial3: true,
       ),
-      home: const CinemaPage(),
+      home: GestureDetector(
+        onTap: () => FocusManager.instance.primaryFocus?.unfocus(),
+        child: const InstagramMainPage(),
+      ),
     );
   }
 }
