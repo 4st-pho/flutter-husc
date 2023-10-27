@@ -27,7 +27,11 @@ class HomePage extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {},
-              icon: SvgPicture.asset(AppImages.svgMessageIcon, height: 25),
+              icon: Image.asset(
+                AppImages.chatIcon,
+                color: Colors.white,
+                height: 25,
+              ),
             ),
           ],
         ),

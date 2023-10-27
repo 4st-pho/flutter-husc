@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:test_app/constants/app_images.dart';
 import 'package:test_app/extensions/list_extension.dart';
+import 'package:test_app/features/classroom/data/dummy_data.dart';
 import 'package:test_app/features/instagram/page/account_page.dart';
 import 'package:test_app/features/instagram/page/upload_page.dart';
 import 'package:test_app/features/instagram/page/reel_page.dart';
@@ -48,7 +49,7 @@ class _InstagramMainPageState extends State<InstagramMainPage> {
       pageIndex == 1 ? AppImages.svgSearchActiveIcon : AppImages.svgSearchIcon,
       AppImages.svgUpload,
       pageIndex == 3 ? AppImages.svgReelActiveIcon : AppImages.svgReelIcon,
-      AppImages.nAvatar
+      currentUser.avatar
     ];
     void tapIcon(paageIndex) {
       setState(() {

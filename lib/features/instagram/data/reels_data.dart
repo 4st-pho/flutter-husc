@@ -23,7 +23,8 @@ final reelsData = [
         'https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blta7d634ba431434e4/60dbd42dcbc6070f5c3d0d6a/2e4a1e6e0b449a4d063dc645fb4aa52173c9c6c9.jpg',
     contentImg:
         "https://media3.giphy.com/media/sRHVFZVZlHsOBwYTFn/giphy.gif?cid=6c09b952h8t1e6yc09hk7atzlrrgayoxcyjyu8qo6wdef23j&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-    content: "see..",
+    content:
+        "see.. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     musicName: "Unknow",
     musicOwner: "Original Audio",
     musicImg:

@@ -4,6 +4,7 @@ class AppImages {
   static const chairs = 'assets/images/chairs.jpg';
   static const film = 'assets/images/film.jpg';
   static const room = 'assets/images/room.jpg';
+  static const chatIcon = 'assets/images/chat.png';
   static const svgUpload = 'assets/images/upload_icon.svg';
   static const svgDrawerIcon = 'assets/images/drawer_icon.svg';
   static const svgLoveIcon = 'assets/images/love_icon.svg';
